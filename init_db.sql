@@ -20,7 +20,7 @@ CREATE TABLE project(
     client_id BIGINT NOT NULL,
     start_date DATE,
     finish_date DATE,
-    FOREIGN KEY (client_id) REFERENCES client (id),
+    FOREIGN KEY (client_id) REFERENCES client (id)
 );
 ALTER TABLE project ADD COLUMN name VARCHAR(100);
 
